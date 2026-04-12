@@ -1,5 +1,3 @@
-"""Hibaüzenetek szótára. Minden hibaüzenet itt van központosítva."""
-
 NEGATIVE_PRICE = "A jegyár nem lehet negatív."
 INVALID_DURATION = "A repülési idő pozitív szám kell legyen."
 EMPTY_PASSENGER_NAME = "Az utas neve nem lehet üres."

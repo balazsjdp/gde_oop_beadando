@@ -6,11 +6,7 @@ from errors import EMPTY_PASSENGER_NAME, EMPTY_FLIGHT_NUMBER
 
 
 def setup(airline: Airline):
-    """
-    Előre betölti a rendszert demo adatokkal: 3 járat és 6 foglalás.
-
-    :param airline: A légitársaság objektum, amelybe az adatok betöltődnek.
-    """
+    """Demo adatok betöltése: járatok és előre rögzített foglalások."""
     f1 = DomesticFlight("MALÉV001", "Debrecen", 8900, 45)
     f2 = DomesticFlight("MALÉV002", "Pécs", 7500, 40)
     f3 = InternationalFlight("MALÉV003", "London", 45000, "UK")

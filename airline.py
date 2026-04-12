@@ -5,29 +5,16 @@ from errors import FLIGHT_NOT_FOUND, PAST_BOOKING_DATE, DUPLICATE_BOOKING, BOOKI
 
 
 class Airline:
-    """Légitársaságot reprezentáló osztály, amely kezeli a járatokat és foglalásokat."""
-
     def __init__(self, name: str):
-        """
-        Inicializálja a légitársaságot.
-
-        :param name: A légitársaság neve.
-        """
         self.__name = name
         self.__flights: list[Flight] = []
         self.__bookings: list[Booking] = []
 
     @property
     def name(self):
-        """Visszaadja a légitársaság nevét."""
         return self.__name
 
     def add_flight(self, flight: Flight):
-        """
-        Hozzáad egy járatot a légitársaság kínálatához.
-
-        :param flight: A hozzáadandó járat.
-        """
         self.__flights.append(flight)
 
     def book_ticket(self, passenger_name: str, flight_number: str, date: datetime) -> float:
@@ -73,9 +60,4 @@ class Airline:
         self.__bookings.remove(booking)
 
     def list_bookings(self) -> list:
-        """
-        Visszaadja az összes aktuális foglalás listáját.
-
-        :return: A foglalások listája.
-        """
         return list(self.__bookings)
