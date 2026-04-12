@@ -1,0 +1,10 @@
+"""Hibaüzenetek szótára. Minden hibaüzenet itt van központosítva."""
+
+NEGATIVE_PRICE = "A jegyár nem lehet negatív."
+INVALID_DURATION = "A repülési idő pozitív szám kell legyen."
+EMPTY_PASSENGER_NAME = "Az utas neve nem lehet üres."
+EMPTY_FLIGHT_NUMBER = "A járatszám nem lehet üres."
+PAST_BOOKING_DATE = "A foglalás dátuma nem lehet múltbeli."
+FLIGHT_NOT_FOUND = "Nem létezik ilyen járat: {}"
+DUPLICATE_BOOKING = "{} már foglalt helyet a {} járatra."
+BOOKING_NOT_FOUND = "Nem található ilyen foglalás."
